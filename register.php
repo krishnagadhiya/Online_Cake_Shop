@@ -26,7 +26,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: linear-gradient(to right top, #72565A, #124FEB)
+            background-color: #fddee6;
         }
 
         .container .card {
@@ -46,7 +46,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
 
         .container .card .left-side {
             width: 50%;
-            background-color: #fff;
+            background-color: #FFEFF1;
             height: 100%;
             position: relative;
             overflow: hidden
@@ -62,8 +62,8 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             width: 400px;
             border-top-right-radius: 150px;
             border-bottom-right-radius: 150px;
-            border: 15px solid #7FC1D2;
-            background-image: linear-gradient(to right, #D43CC6, #682E36)
+            
+            background-image: linear-gradient(to right,  #fd2a6f, #fddee6)
         }
 
         .left-side span:nth-child(2) {
@@ -76,7 +76,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             width: 200px;
             border-top-right-radius: 150px;
             border-bottom-right-radius: 150px;
-            background-image: linear-gradient(to right, #D43CC6, #682E36)
+            background-image: linear-gradient(to right, #fddee6, #f55887)
         }
 
         .left-side span:nth-child(3) {
@@ -89,7 +89,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             width: 200px;
             border-top-right-radius: 150px;
             border-bottom-right-radius: 150px;
-            background-image: linear-gradient(to right, #D43CC6, #682E36)
+            background-image: linear-gradient(to right,  #fddee6, #f55887)
         }
 
         .left-side span:nth-child(4) {
@@ -102,12 +102,12 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             width: 200px;
             border-top-right-radius: 150px;
             border-bottom-right-radius: 150px;
-            background-image: linear-gradient(to right, #FD2A6F, #FD2A46)
+            background-image: linear-gradient(to right, #fddee6, #f55887)
         }
 
         .container .card .right-side {
             width: 50%;
-            background-color: #fff;
+            background-color: #FFEFF1;
             height: 100%;
             padding: 20px
         }
@@ -134,7 +134,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             height: 45px;
             width: 100%;
             border: none;
-            background-color: #E7DCE6;
+            background-color: white;
             outline: 0;
             padding: 5px 10px;
             padding-left: 25px;
@@ -145,7 +145,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             height: 45px;
             width: 100%;
             border: none;
-            background-color: #E7DCE6;
+            background-color: white;
             outline: 0;
             padding: 5px 10px;
             padding-left: 25px;
@@ -208,7 +208,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             width: 100%;
             color: #fff;
             border-radius: 30px;
-            background-color: #B33346;
+            background-color:#F55887;
             font-size: 13px;
             cursor: pointer;
             transition: all 0.5s
@@ -285,7 +285,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
 </head>
 
 <body>
-    <div class="container" style="background-image: linear-gradient(to right top,#fd2a6f61,#ffffff);">
+    <div class="container">
         <div class="card" style="height: 700px;">
             <div class="form"  >
                 <div class="left-side"> <span style="top: 93px;left: -122px;" ></span> <span></span> <span style="top: 380px;"></span> <span style="top: 615px;"></span> </div>

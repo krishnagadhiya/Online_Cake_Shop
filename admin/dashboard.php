@@ -43,7 +43,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-right-top">
                         <li class="nav-item dropdown nav-user">
-                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../uploads/default-image.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../uploads/user.png" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name"><?php echo $admin_username;?></h5>
@@ -64,7 +64,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
         <!-- left sidebar -->
         <!-- ============================================================== -->
       <div class="nav-left-sidebar sidebar-dark">
-            <div class="menu-list">
+            <div class="menu-list" style="background-color: #F55887;">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Menu</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -160,7 +160,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                 $query_users = mysqli_query($conn, $select_users);
                                 $res_users = mysqli_num_rows($query_users);
                                 ?>
-                                <p class="card-text">Number of users in database = <?php echo $res_users;?>.</p>
+                                <p class="card-text">Number of users = <?php echo $res_users;?>.</p>
                                 <a href="view_users.php" class="btn btn-rounded btn-dark">View</a>
                             </div>
                         </div>
@@ -174,7 +174,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                 $query_category = mysqli_query($conn, $select_category);
                                 $res_category = mysqli_num_rows($query_category);
                                 ?>
-                                <p class="card-text">Number of categories in database = <?php echo $res_category;?>.</p>
+                                <p class="card-text">Number of categories = <?php echo $res_category;?>.</p>
                                 <a href="view_category.php" class="btn btn-rounded btn-light">View</a>
                             </div>
                         </div>
@@ -189,7 +189,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                 $query_product = mysqli_query($conn, $select_product);
                                 $res_product = mysqli_num_rows($query_product);
                                 ?>
-                                <p class="card-text">Number of products in database = <?php echo $res_product;?>.</p>
+                                <p class="card-text">Number of products  = <?php echo $res_product;?>.</p>
                                 <a href="view_product.php" class="btn btn-rounded btn-info">View</a>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                 $query_orders = mysqli_query($conn, $select_orders);
                                 $res_orders = mysqli_num_rows($query_orders);
                                 ?>
-                                <p class="card-text">Number of orders in database = <?php echo $res_orders;?>.</p>
+                                <p class="card-text">Number of orders = <?php echo $res_orders;?>.</p>
                                 <a href="view_orders.php" class="btn btn-rounded btn-danger">View</a>
                             </div>
                         </div>
@@ -214,23 +214,8 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
             <!-- footer -->
             <!-- ============================================================== -->
             
-            <div class="footer" style="border-top: 500px solid rgba(152, 166, 173, .2);">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            Copyright © 2022 Concept. All rights reserved. Online Cake Shop
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
+            <?php include("footer.php"); ?>
+            <!-- style="border-top: 500px solid rgba(152, 166, 173, .2);"============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
         </div>

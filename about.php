@@ -191,16 +191,7 @@ else {
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="text-align:center">
-                            Copyright © 2022 Concept. All rights reserved. Online Cake Shop
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
+            <?php include("footer.php"); ?>
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->

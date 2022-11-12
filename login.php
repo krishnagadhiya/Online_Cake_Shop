@@ -287,7 +287,7 @@ if (isset($_GET['login_error']) && $_GET['login_error'] == 1) {
     <div class="container">
         <div class="card">
             <div class="form"  >
-                <div class="left-side"> <span></span> <span></span> <span></span> <span></span> </div>
+                <div class="left-side"><img src="uploads/221018031934.jpg" style="height: 450px;width: 400px;"> </div>
                 <div class="right-side">
                     <div class="signin_form s_form ">
                         <div class="login">

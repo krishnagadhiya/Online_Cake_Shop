@@ -40,7 +40,7 @@ if (isset($_GET['login_error']) && $_GET['login_error'] == 1) {
     <!-- ============================================================== -->
     <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><a href="#"><h2 class="text-primary">Online Cake Shop</h2></a><span class="splash-description">Please enter your user information.</span></div>
+            <div class="card-header text-center" style="background-color: #F55887;"><a href="#"><h2 class="text-primary" style="    color: white !important;">Online Cake Shop</h2></a><span class="splash-description" style="    color: white !important;">Please enter your user information.</span></div>
             <div class="card-body">
                 <form id="form" data-parsley-validate="" method="post" action="login_check.php">
                     <div class="form-group">
@@ -53,8 +53,8 @@ if (isset($_GET['login_error']) && $_GET['login_error'] == 1) {
                 </form>
             </div>
             <div class="card-footer bg-white p-0  ">
-                <div class="card-footer-item card-footer-item-bordered">
-                    <a href="admin_signup.php" class="footer-link">Create An Account</a></div>
+            <!--<div class="card-footer-item card-footer-item-bordered">
+                    <a href="admin_signup.php" class="footer-link">Create An Account</a></div>-->
                 <div class="card-footer-item card-footer-item-bordered">
                     <a href="#" class="footer-link">Forgot Password</a>
                 </div>

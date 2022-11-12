@@ -78,7 +78,7 @@ else {
                             <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item dropdown nav-user">
-                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="uploads/default-image.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="uploads/user.png" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name"><?php echo $printUsername;?></h5>
@@ -135,7 +135,7 @@ else {
                                     <?php
                                     $file_array = explode(', ', $res['product_image']);
                                     ?>
-                                    <img src="uploads/<?php echo $file_array[0];?>" class="img-fluid" style="height:400px; width:300px;">
+                                    <img src="uploads/<?php echo $file_array[0];?>" class="img-fluid" style="height:250px; width:100%;">
                                 </div> 
                             </div>
                             <div class="product-content">
@@ -169,9 +169,9 @@ else {
                             ?>
                             <div class="item">
                                 <div class="card h-100">
-                                    <div class="card-body" style="height:350px; width:300px;" >
+                                    <div class="card-body" >
                                         <h3 class="card-title"><?php echo $res['category_name'];?></h3>
-                                        <a href="shop.php?category=<?php echo $res['category_id'];?>"><img class="card-img" style="height:275px; width:285px;" src="uploads/<?php echo $res['category_image'];?>"></a>
+                                        <a href="shop.php?category=<?php echo $res['category_id'];?>"><img class="card-img" style="width: 100%; height: 250px;" src="uploads/<?php echo $res['category_image'];?>"></a>
                                     </div>
                                     
                                 </div>
@@ -187,22 +187,7 @@ else {
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            Copyright © 2022 Concept. All rights reserved. Online Cake Shop
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php include("footer.php"); ?>
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->

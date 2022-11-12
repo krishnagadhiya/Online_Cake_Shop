@@ -656,7 +656,8 @@ readers do not read off random characters that represent icons */
   content: "\f201"; }
 
 .fa-chart-pie:before {
-  content: "\f200"; }
+  content: "\f200"; 
+color: black;}
 
 .fa-check:before {
   content: "\f00c"; }
@@ -1967,7 +1968,8 @@ readers do not read off random characters that represent icons */
   content: "\f487"; }
 
 .fa-product-hunt:before {
-  content: "\f288"; }
+  content: "\f288"; 
+color: black;}
 
 .fa-pushed:before {
   content: "\f3e1"; }
@@ -2072,7 +2074,8 @@ readers do not read off random characters that represent icons */
   content: "\f018"; }
 
 .fa-rocket:before {
-  content: "\f135"; }
+  content: "\f135"; 
+color: black;}
 
 .fa-rocketchat:before {
   content: "\f3e8"; }
@@ -2168,7 +2171,9 @@ readers do not read off random characters that represent icons */
   content: "\f291"; }
 
 .fa-shopping-cart:before {
-  content: "\f07a"; }
+  content: "\f07a";
+  color: black;
+ }
 
 .fa-shower:before {
   content: "\f2cc"; }
@@ -2603,7 +2608,8 @@ readers do not read off random characters that represent icons */
   content: "\f007"; }
 
 .fa-user-circle:before {
-  content: "\f2bd"; }
+  content: "\f2bd"; 
+color: black;}
 
 .fa-user-md:before {
   content: "\f0f0"; }
